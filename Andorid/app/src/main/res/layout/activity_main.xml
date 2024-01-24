@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relativebutton"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:text="Scan QR Surat"
+            app:icon="@drawable/baseline_camera_enhance_24"
+            app:cornerRadius="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="#A9907E"
+            android:fontFamily="@font/poppinsmedium"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:id="@+id/btn_scanqr"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativebutton"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        tools:listitem="@layout/adapter_doc"
+        android:id="@+id/recyclerView"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/progbar"/>
+</RelativeLayout>

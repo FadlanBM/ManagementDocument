@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 8.5" name="AppDbContext">
+  <DataContextMoniker Name="/AppDbContextDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2f350ad3-c521-43b8-bacd-16e68ad3e76c" absoluteBounds="3.5, 1.75, 2, 2.5401025390624996">
+      <DataClassMoniker Name="/AppDbContextDataContext/tb_user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="42ffc2cc-45be-4040-91cc-ec1545e79535" absoluteBounds="3.515, 2.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="64451179-9c47-415f-9932-ea1c2827beae" absoluteBounds="6.25, 1, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/AppDbContextDataContext/tb_dokumen" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f71fcf61-e7f5-46c4-95d5-39e809d09575" absoluteBounds="6.265, 1.46, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="03d4c89c-b104-4a93-9390-a6479702a649" absoluteBounds="9, 2.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AppDbContextDataContext/tb_history" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4dccb6ac-0129-4dd7-92d6-a40b33824610" absoluteBounds="9.015, 2.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2f1b1d1d-687e-4dfc-baa8-a9220313e883" absoluteBounds="0.75, 2.5, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/AppDbContextDataContext/tb_identita" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a010d837-8544-4918-99d2-44afb61c1420" absoluteBounds="0.765, 2.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 3.02005126953125); (6.25 : 3.02005126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AppDbContextDataContext/tb_user/tb_user_tb_dokumen" />
+      <nodes>
+        <classShapeMoniker Id="2f350ad3-c521-43b8-bacd-16e68ad3e76c" />
+        <classShapeMoniker Id="64451179-9c47-415f-9932-ea1c2827beae" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.32252563476562); (6.25 : 2.32252563476562)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AppDbContextDataContext/tb_user/tb_user_tb_dokumen1" />
+      <nodes>
+        <classShapeMoniker Id="2f350ad3-c521-43b8-bacd-16e68ad3e76c" />
+        <classShapeMoniker Id="64451179-9c47-415f-9932-ea1c2827beae" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 3.03929768880208); (9 : 3.03929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AppDbContextDataContext/tb_dokumen/tb_dokumen_tb_history" />
+      <nodes>
+        <classShapeMoniker Id="64451179-9c47-415f-9932-ea1c2827beae" />
+        <classShapeMoniker Id="03d4c89c-b104-4a93-9390-a6479702a649" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.09699625651042); (3.5 : 3.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AppDbContextDataContext/tb_identita/tb_identita_tb_user" />
+      <nodes>
+        <classShapeMoniker Id="2f1b1d1d-687e-4dfc-baa8-a9220313e883" />
+        <classShapeMoniker Id="2f350ad3-c521-43b8-bacd-16e68ad3e76c" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

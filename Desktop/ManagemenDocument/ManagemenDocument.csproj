@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FADE1A9D-E8E9-48DE-8A0D-371426DCDE7C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ManagemenDocument</RootNamespace>
+    <AssemblyName>ManagemenDocument</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\..\..\..\..\..\Users\ASUS\Downloads\Compressed\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zen.Barcode.Rendering.Framework.3.1.10729.1\lib\Zen.Barcode.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminEditAccunt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEditAccunt.Designer.cs">
+      <DependentUpon>AdminEditAccunt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_AddIdentitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_AddIdentitas.Designer.cs">
+      <DependentUpon>Admin_AddIdentitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_AddUser.Designer.cs">
+      <DependentUpon>Admin_AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Add_Doc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Add_Doc.Designer.cs">
+      <DependentUpon>Admin_Add_Doc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Dashboard.Designer.cs">
+      <DependentUpon>Admin_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_DetailDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_DetailDoc.Designer.cs">
+      <DependentUpon>Admin_DetailDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_ManagementIdentitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_ManagementIdentitas.Designer.cs">
+      <DependentUpon>Admin_ManagementIdentitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_ManagementUserBelumVerify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_ManagementUserBelumVerify.Designer.cs">
+      <DependentUpon>Admin_ManagementUserBelumVerify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Management_Doc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Management_Doc.Designer.cs">
+      <DependentUpon>Admin_Management_Doc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Management_User_Verify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Management_User_Verify.Designer.cs">
+      <DependentUpon>Admin_Management_User_Verify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppDbContext.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppDbContext.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="BrowserDataCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrowserDataCustomer.Designer.cs">
+      <DependentUpon>BrowserDataCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGenerateCrCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGenerateCrCode.Designer.cs">
+      <DependentUpon>FGenerateCrCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_ListPenerima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_ListPenerima.Designer.cs">
+      <DependentUpon>Admin_ListPenerima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FResetPassword.Designer.cs">
+      <DependentUpon>FResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\helper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminEditAccunt.resx">
+      <DependentUpon>AdminEditAccunt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_AddIdentitas.resx">
+      <DependentUpon>Admin_AddIdentitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_AddUser.resx">
+      <DependentUpon>Admin_AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Add_Doc.resx">
+      <DependentUpon>Admin_Add_Doc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Dashboard.resx">
+      <DependentUpon>Admin_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_DetailDoc.resx">
+      <DependentUpon>Admin_DetailDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_ListPenerima.resx">
+      <DependentUpon>Admin_ListPenerima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_ManagementIdentitas.resx">
+      <DependentUpon>Admin_ManagementIdentitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_ManagementUserBelumVerify.resx">
+      <DependentUpon>Admin_ManagementUserBelumVerify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Management_Doc.resx">
+      <DependentUpon>Admin_Management_Doc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Management_User_Verify.resx">
+      <DependentUpon>Admin_Management_User_Verify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowserDataCustomer.resx">
+      <DependentUpon>BrowserDataCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGenerateCrCode.resx">
+      <DependentUpon>FGenerateCrCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FResetPassword.resx">
+      <DependentUpon>FResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="AppDbContext.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AppDbContext.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AppDbContext.dbml.layout">
+      <DependentUpon>AppDbContext.dbml</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background-with-randomly-drawn-lines-and-special-effects-in-Step-9_Q320.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
